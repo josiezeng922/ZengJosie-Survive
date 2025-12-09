@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.5/lib/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/addons/p5.sound.min.js"></script>
+    <style>
+        #myCanvasContainer{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100% !important;
+            height: 100% !important;
+            z-index: -1;
+            transform: scale(1) !important;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+<!--    <div class="home_con">-->
+<!--        <div class="title">Survive</div>-->
+<!--        <div class="text">-->
+
+<!--        </div>-->
+<!--        <div class="home_btn">start</div>-->
+<!--    </div>-->
+
+
+    <div class="game_con">
+        <div class="game_con_left">
+            <div class="icon_list">
+                <img src="../image/icon1.png"/>
+                <span class="n1">100</span>
+            </div>
+            <div class="icon_list">
+                <img src="../image/icon2.png"/>
+                <span class="n2">100</span>
+            </div>
+            <div class="icon_list">
+                <img src="../image/icon3.png"/>
+                <span class="n3">100</span>
+            </div>
+            <div class="icon_list">
+                <img src="../image/icon4.png"/>
+                <span class="n4">200</span>
+            </div>
+
+            <div class="music"><img src="../image/icon7.png" class="music_img"/></div>
+        </div>
+        <div class="game_con_center">
+            <div id="myCanvasContainer"></div>
+
+            <div class="day1 days_active">
+                <div class="game_title">
+                    Find a Job
+                </div>
+                <div class="game_text">
+                    Event: Only 5 days left after being laid off to find a new job
+                </div>
+                <div class="game_list">
+                    <div>
+                        <div class="game_des">Applying for Uber Eats Delivery Assistant</div>
+                        <div class="btn btn1">Select</div>
+                    </div>
+                    <div>
+                        <div class="game_des">Go to the restaurant to do odd jobs</div>
+                        <div class="btn btn2">Select</div>
+                    </div>
+                    <div>
+                        <div class="game_des">Borrowing high interest loans to start a business</div>
+                        <div class="btn btn3">Select</div>
+                    </div>
+                </div>
+            </div>
+            <div class="day2">
+                <div class="game_title">
+                    Accommodation crisis
+                </div>
+                <div class="game_text">
+                    The landlord's eviction requires a prepayment of three months' rent, as they do not have enough money and can only make the following choices
+                </div>
+                <div class="game_list">
+                    <div>
+                        <div class="game_des">Stay at a 24-hour fast food restaurant</div>
+                        <div class="btn btn4">Select</div>
+                    </div>
+                    <div>
+                        <div class="game_des">Go stay at a youth hostel</div>
+                        <div class="btn btn5">Select</div>
+                    </div>
+                    <div>
+                        <div class="game_des">Sleeping Bridge Cave</div>
+                        <div class="btn btn6">Select</div>
+                    </div>
+                </div>
+            </div>
+            <div class="day3">
+                <div class="game_title">
+                    Survival Decision
+                </div>
+                <div class="game_text">
+                    There's not enough food, I passed by the supermarket and found that expired food was on sale
+                </div>
+                <div class="game_list">
+                    <div>
+                        <div class="game_des">Purchase instant noodles</div>
+                        <div class="btn btn7">Select</div>
+                    </div>
+                    <div>
+                        <div class="game_des">Stealing bread</div>
+                        <div class="btn btn8">Select</div>
+                    </div>
+                    <div>
+                        <div class="game_des">Help Rescue Station</div>
+                        <div class="btn btn9">Select</div>
+                    </div>
+                </div>
+            </div>
+            <div class="day4">
+                <div class="game_title">
+                    Moral test
+                </div>
+                <div class="game_text">
+                    My former close uncle suddenly fell seriously ill and needed to raise funds for surgery
+                </div>
+                <div class="game_list">
+                    <div>
+                        <div class="game_des">Selling blood to raise money</div>
+                        <div class="btn btn10">Select</div>
+                    </div>
+                    <div>
+                        <div class="game_des">stand idly by</div>
+                        <div class="btn btn11">Select</div>
+                    </div>
+                </div>
+            </div>
+            <div class="day5">
+                <div class="game_title">
+                    The Final Challenge
+                </div>
+                <div class="game_text">
+                    I want to raise the 3-month prepaid rental fee as soon as possible. I consulted a black agent and was offered a high-risk job with a daily settlement of $500
+                </div>
+                <div class="game_list">
+                    <div>
+                        <div class="game_des">Do high-altitude cleaners purchase safety ropes?</div>
+                        <div style="display: flex;gap: 20px;justify-content: center;margin-top: 20px;">
+                            <div class="btn btn12" style="margin: 0">Buy</div>
+                            <div class="btn btn13" style="margin: 0">Without</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="game_des">Watch a nightclub</div>
+                        <div class="btn btn14">Select</div>
+                    </div>
+                    <div>
+                        <div class="game_des">Refuse temptation</div>
+                        <div class="btn btn15">Select</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="game_con_right">
+            <div class="day_text day_active">1</div>
+            <div class="day_text">2</div>
+            <div class="day_text">3</div>
+            <div class="day_text">4</div>
+            <div class="day_text">5</div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pop">
+    <div class="pop_icon"><img src="../image/icon5.png"/></div>
+    <span class="pop_text">Physical stamina -30, get a job (+100 USD per day)</span>
+    <div class="pop_btn">CLOSE</div>
+</div>
+
+<!--popup for purchasing medicine-->
+<div class="med_pop">
+    <div class="pop_icon"><img src="../image/icon6.png"/></div>
+    <span class="pop_text">Did you purchase medicine today?</span>
+    <div class="med_pop_btns ">
+        <div class="med_btn1">Buy</div>
+        <div class="med_btn2">Do not purchase</div>
+    </div>
+</div>
+<!--game over html-->
+<div class="game_over">
+    <div class="over_title">Lose game</div>
+    <div class="over_btn">Restart</div>
+</div>
+<audio src="../music/day.mp3" class="day_music"></audio>
+<audio src="../music/night.mp3" class="night_music"></audio>
+<script src="../js/javascript.js"></script>
+<script src="../js/p5.js"></script>
+
+</body>
+</html>
